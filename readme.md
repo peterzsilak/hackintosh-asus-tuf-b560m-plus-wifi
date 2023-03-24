@@ -66,4 +66,18 @@ Howto(s):
   
 ## BIOS setup
 
+## Good news
+
+  * Audio works
+  
+  * Wifi works
+  
+  * Bluetooth works
+  
+  * Airdrop works
+
 ## Known issues 
+
+  * The wifi loads and connects to the internet half a minute later
+  
+  * The system restarts randomly
