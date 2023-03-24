@@ -66,6 +66,27 @@ Howto(s):
   
 ## BIOS setup
 
+  * X.M.P.: Enabled
+  * Intel Rapid Storage Technology: Off
+  * AI Overclock Tuner: XMP II
+  * Intel VMX Virtualisation Technology: Enabled
+  * Hyper-Threading: Enabled
+  * VT-d: Enabled
+  * Primary Display: CPU Graphics
+  * iGPU: Enabled
+  * DVMT Pre-Allocated: 1024
+  * SATA Mode Selection: AHCI
+  * Re-Size BAR Support: Enabled
+  * SR-IOV Support: Enabled
+  * XHCI Hand-off: Enabled
+  * Serial port: Disabled
+  * Secure Boot: Other OS
+  * Secure Boot Mode: Custom
+  * Clear Secure Boot Keys: YES
+  * Fast Boot: Disabled
+  * Boot Sector Recovery Policy: Auto Recovery (Follow UEFI Rules)
+
+
 ## Good news
 
   * Audio works
