@@ -99,6 +99,6 @@ Howto(s):
 
 ## Known issues 
 
-  * The wifi loads and connects to the internet half a minute later
+  * The wifi loads and connects to the internet half a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
   
   * The system restarts randomly
