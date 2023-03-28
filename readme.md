@@ -69,7 +69,7 @@ Howto(s):
   * X.M.P.: Enabled
   * Intel Rapid Storage Technology: Off
   * AI Overclock Tuner: XMP II
-  * Intel VMX Virtualisation Technology: Enabled
+  * Intel VMX Virtualization Technology: Enabled
   * Hyper-Threading: Enabled
   * VT-d: Enabled
   * Primary Display: CPU Graphics
@@ -89,16 +89,34 @@ Howto(s):
 
 ## Good news
 
-  * Audio works
+  * Audio works - tested, works
   
-  * Wifi works
+  * Wifi works - tested, works
   
-  * Bluetooth works
+  * Bluetooth works - tested, works
   
-  * Airdrop works
+  * Airdrop - not tested
+
+## WARNING!
+
+Do not forget to edit the PlatformInfo section of config.plist!
+
+## Screenshots
+I have removed the sensitive information from the screenshots.
+
+![Screenshot 2023-03-28 at 7.55.54.png](screenshots%2FScreenshot%202023-03-28%20at%207.55.54.png)
+![Screenshot 2023-03-28 at 7.54.51.png](screenshots%2FScreenshot%202023-03-28%20at%207.54.51.png)
+![Screenshot 2023-03-28 at 7.55.15.png](screenshots%2FScreenshot%202023-03-28%20at%207.55.15.png)
+![Screenshot 2023-03-28 at 7.54.41.png](screenshots%2FScreenshot%202023-03-28%20at%207.54.41.png)
 
 ## Known issues 
 
-  * The wifi loads and connects to the internet half a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
+  * The wifi loads and connects to the internet a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
   
   * The system restarts randomly
+
+## Project plans
+
+  * extending with AMD VGA, the iGPU is just a temporary solution
+
+  * investigation the cause of random restarts, and fix
