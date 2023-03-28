@@ -117,6 +117,9 @@ I have removed the sensitive information from the screenshots.
 
 ## Project plans
 
-  * extending with AMD VGA, the iGPU is just a temporary solution
+  * I will soon expand the system with AMD VGA, the iGPU is only a temporary solution. 
 
-  * investigation the cause of random restarts, and fix
+  * I am looking into the cause of the random reboots and plan to fix it. 
+
+  * If the intel ax201 does not stabilize, I will replace it with the Fenvi T919.
+
