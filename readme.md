@@ -113,7 +113,7 @@ I have removed the sensitive information from the screenshots.
 
   * The wifi loads and connects to the internet a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
   
-  * The system restarts randomly because of IOPCIFamily ([log](https://github.com/peterzsilak/hackintosh-on-asus-tuf-b560m-plus-wifi.git/logs/IOPCIFamily_kernel_panic.txt))
+  * The system restarts randomly because of IOPCIFamily ([log](https://github.com/peterzsilak/hackintosh-on-asus-tuf-b560m-plus-wifi/blob/kernel_panic/logs/IOPCIFamily_kernel_panic.txt))
 
 ## Project plans
 
