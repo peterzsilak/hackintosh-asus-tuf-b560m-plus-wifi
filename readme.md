@@ -114,6 +114,79 @@ I have removed the sensitive information from the screenshots.
   * The wifi loads and connects to the internet a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
   
   * The system restarts randomly
+  
+  Logs: ```panic(cpu 8 caller 0xffffff80187485f3): Kernel trap at 0xffffff801b06a6cd, type 14=page fault, registers:
+CR0: 0x000000008001003b, CR2: 0x0000000000000058, CR3: 0x00000001eac9506a, CR4: 0x00000000003626e0
+RAX: 0x0000000000000000, RBX: 0xffffff957c3199c0, RCX: 0x0000000000000000, RDX: 0x0000000000420000
+RSP: 0xffffffd02deffb60, RBP: 0xffffffd02deffb90, RSI: 0xffffff90aff7c760, RDI: 0xffffff957c3199c0
+R8:  0x0000000000000015, R9:  0x0000000000000002, R10: 0xffffff8be3a71dd0, R11: 0xffffff90aff7c760
+R12: 0xffffff8019496980, R13: 0x00000000e00002e2, R14: 0xffffff90aff7c760, R15: 0xffffff90b257928c
+RFL: 0x0000000000010246, RIP: 0xffffff801b06a6cd, CS:  0x0000000000000008, SS:  0x0000000000000010
+Fault CR2: 0x0000000000000058, Error code: 0x0000000000000000, Fault CPU: 0x8, PL: 0, VF: 0
+
+Panicked task 0xffffff957c9d9df0: 3 threads: pid 88: systemstats
+Backtrace (CPU 8), panicked thread: 0xffffff8be242f598, Frame : Return Address
+0xffffffd02deff540 : 0xffffff80185eb38d 
+0xffffffd02deff590 : 0xffffff8018758ed6 
+0xffffffd02deff5d0 : 0xffffff8018748120 
+0xffffffd02deff620 : 0xffffff8018585951 
+0xffffffd02deff640 : 0xffffff80185eb66d 
+0xffffffd02deff730 : 0xffffff80185ead19 
+0xffffffd02deff790 : 0xffffff8018de072b 
+0xffffffd02deff880 : 0xffffff80187485f3 
+0xffffffd02deffa00 : 0xffffff80187482e2 
+0xffffffd02deffa50 : 0xffffff8018585951 
+0xffffffd02deffa70 : 0xffffff801b06a6cd 
+0xffffffd02deffb90 : 0xffffff8018cd8b14 
+0xffffffd02deffbb0 : 0xffffff8018cd902f 
+0xffffffd02deffbe0 : 0xffffff8018d51161 
+0xffffffd02deffc50 : 0xffffff8018701895 
+0xffffffd02deffca0 : 0xffffff80185c2c99 
+0xffffffd02deffd50 : 0xffffff80185dbbd2 
+0xffffffd02deffdc0 : 0xffffff80185dc2da 
+0xffffffd02deffef0 : 0xffffff801872a71a 
+0xffffffd02defffa0 : 0xffffff8018585db6 
+      Kernel Extensions in backtrace:
+         com.apple.iokit.IOPCIFamily(2.9)[802B9CA4-B851-396E-8DA4-B30E751EC48F]@0xffffff801b059000->0xffffff801b088fff
+
+Process name corresponding to current thread (0xffffff8be242f598): systemstats
+Boot args: dk.e1000=0 alcid=66 npci=0x2000 
+
+Mac OS version:
+22D68
+
+Kernel version:
+Darwin Kernel Version 22.3.0: Mon Jan 30 20:42:11 PST 2023; root:xnu-8792.81.3~2/RELEASE_X86_64
+Kernel UUID: 10E5D254-4A37-3A2A-B560-E6956A093ADE
+roots installed: 0
+KernelCache slide: 0x0000000018200000
+KernelCache base:  0xffffff8018400000
+Kernel slide:      0x00000000182dc000
+Kernel text base:  0xffffff80184dc000
+__HIB  text base: 0xffffff8018300000
+System model name: iMac20,1 (Mac-CFF7D910A743CAAF)
+System shutdown begun: NO
+Panic diags file available: YES (0x0)
+Hibernation exit count: 0
+
+System uptime in nanoseconds: 609914003435
+Last Sleep:           absolute           base_tsc          base_nano
+  Uptime  : 0x0000008e01b525ce
+  Sleep   : 0x0000000000000000 0x0000000000000000 0x0000000000000000
+  Wake    : 0x0000000000000000 0x00000017913479eb 0x0000000000000000
+Compressor Info: 0% of compressed pages limit (OK) and 0% of segments limit (OK) with 0 swapfiles and OK swap space
+Zone info:
+  Zone map: 0xffffff80ade01000 - 0xffffffa0ade01000
+  . PGZ   : 0xffffff80ade01000 - 0xffffff80b1e02000
+  . VM    : 0xffffff80b1e02000 - 0xffffff857e135000
+  . RO    : 0xffffff857e135000 - 0xffffff871779b000
+  . GEN0  : 0xffffff871779b000 - 0xffffff8be3ace000
+  . GEN1  : 0xffffff8be3ace000 - 0xffffff90afe01000
+  . GEN2  : 0xffffff90afe01000 - 0xffffff957c134000
+  . GEN3  : 0xffffff957c134000 - 0xffffff9a48467000
+  . DATA  : 0xffffff9a48467000 - 0xffffffa0ade01000
+  Metadata: 0xffffff803d66d000 - 0xffffff805d66d000
+  Bitmaps : 0xffffff805d66d000 - 0xffffff806966d000```
 
 ## Project plans
 
