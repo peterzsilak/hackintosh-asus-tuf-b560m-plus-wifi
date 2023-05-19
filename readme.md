@@ -92,8 +92,9 @@ Howto(s):
 
 ## Good and Bad
 
-  * Audio works - tested, works
-  * WIFI & Bluetooth with Handsoff - not stable
+  :thumbsup: Audio works - tested, works
+
+  :thumbsdown: WIFI & Bluetooth with Handsoff - I removed the unstable wifi and bluetooth kexts
 
 ## WARNING!
 
