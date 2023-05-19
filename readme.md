@@ -49,12 +49,6 @@ Howto(s):
   * FakePCIID_Intel_HDMI_Audio - This is a companion extension specifically for Intel integrated HDMI audio. They allow certain unsupported hardware to be recognized and used by macOS.
   
   * LucyRTL8125Ethernet - This kext is responsible for network card support and may be required to support Ethernet controllers on the motherboard.
-  
-  * AirportItlwm and IntelBluetoothFirmware - These kexts are responsible for supporting the Wi-Fi and Bluetooth controllers and may be required to support the Intel Wi-Fi and Bluetooth controllers on the motherboard.
-  
-  * BlueToolFixup - this fixes firmware errors related to Apple Broadcom WiFi and Bluetooth cards that may occur with unsupported Wi-Fi and Bluetooth cards. kext improves AirDrop, Handoff and other features.
-  
-  * IntelBTPatcher - A Lilu base patcher that fix Intel Bluetooth on Bigsur, Catalina, Mojave, High sierra etc, tested with Bigsur and Catalina all working good.
 
   * USBInjectAll - This kext is responsible for supporting USB ports and may be required to support USB ports on the motherboard.
   
@@ -63,7 +57,16 @@ Howto(s):
   * SMCProcessor - SMC ensures the reading and setting of data from hardware sensors and sensors (e.g. temperature, fan speed, battery status, etc.) through systems designed by Apple.
   
   * SMCSuperIO - This is an add-on kext for macOS that supports motherboard hardware such as motherboard circuit controllers (Super I/O). These controllers are responsible for controlling fans, temperature sensors, and LEDs on the front of the computer case.
-  
+
+### WIFI and Bluetooth kexts:
+
+  * AirportItlwm and IntelBluetoothFirmware - These kexts are responsible for supporting the Wi-Fi and Bluetooth controllers and may be required to support the Intel Wi-Fi and Bluetooth controllers on the motherboard.
+
+  * BlueToolFixup - this fixes firmware errors related to Apple Broadcom WiFi and Bluetooth cards that may occur with unsupported Wi-Fi and Bluetooth cards. kext improves AirDrop, Handoff and other features.
+
+  * IntelBTPatcher - A Lilu base patcher that fix Intel Bluetooth on Bigsur, Catalina, Mojave, High sierra etc, tested with Bigsur and Catalina all working good.
+
+
 ## BIOS setup
 
   * X.M.P.: Enabled
@@ -87,39 +90,26 @@ Howto(s):
   * Boot Sector Recovery Policy: Auto Recovery (Follow UEFI Rules)
 
 
-## Good news
+## Good and Bad
 
   * Audio works - tested, works
-  
-  * Wifi works - tested, works
-  
-  * Bluetooth works - tested, works
-  
-  * Airdrop - not tested
+  * WIFI & Bluetooth with Handsoff - not stable
 
 ## WARNING!
 
 Do not forget to edit the PlatformInfo section of config.plist!
 
 ## Screenshots
-I have removed the sensitive information from the screenshots.
 
-![Screenshot 2023-03-28 at 7.55.54.png](screenshots%2FScreenshot%202023-03-28%20at%207.55.54.png)
-![Screenshot 2023-03-28 at 7.54.51.png](screenshots%2FScreenshot%202023-03-28%20at%207.54.51.png)
-![Screenshot 2023-03-28 at 7.55.15.png](screenshots%2FScreenshot%202023-03-28%20at%207.55.15.png)
-![Screenshot 2023-03-28 at 7.54.41.png](screenshots%2FScreenshot%202023-03-28%20at%207.54.41.png)
+## Known issues
 
-## Known issues 
-
-  * The wifi loads and connects to the internet a minute later: [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
-  
-  * The system restarts randomly because of IOPCIFamily ([log](https://github.com/peterzsilak/hackintosh-on-asus-tuf-b560m-plus-wifi/blob/master/logs/IOPCIFamily_kernel_panic.txt))
+  * The wifi loads and connects lately and causes random restarts: 
+  [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
+  ([log](https://github.com/peterzsilak/hackintosh-on-asus-tuf-b560m-plus-wifi/blob/master/logs/IOPCIFamily_kernel_panic.txt))
 
 ## Project plans
 
-  * I will soon expand the system with AMD VGA, the iGPU is only a temporary solution. 
+  * I will soon expand the system with AMD VGA, the iGPU is only a temporary solution.
 
-  * I am looking into the cause of the random reboots and plan to fix it. 
-
-  * If the intel ax201 does not stabilize, I will replace it with the Fenvi T919.
+  * If I cannot stabilize the Intel (AX201) wifi and bluetooth, I will replace it with the Fenvi T919.
 
