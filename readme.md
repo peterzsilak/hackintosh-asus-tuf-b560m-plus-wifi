@@ -108,5 +108,5 @@ Do not forget to edit the PlatformInfo section of config.plist!
 
 ## Screenshots
 
-![Screenshot1](screenshots/screenshot1.png)
-![Screenshot2](screenshots/screenshot2.png)
+![Screenshot1](screenshots/Screenshot1.png)
+![Screenshot2](screenshots/Screenshot2.png)
