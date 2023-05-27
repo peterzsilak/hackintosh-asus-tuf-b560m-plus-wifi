@@ -60,7 +60,7 @@ Howto(s):
 
 ### WIFI and Bluetooth kexts:
 
-  * AirportItlwm and IntelBluetoothFirmware - These kexts are responsible for supporting the Wi-Fi and Bluetooth controllers and may be required to support the Intel Wi-Fi and Bluetooth controllers on the motherboard.
+  * AirportItlwm and IntelBluetoothFirmware, IntelBluetoothInjector - These kexts are responsible for supporting the Wi-Fi and Bluetooth controllers and may be required to support the Intel Wi-Fi and Bluetooth controllers on the motherboard.
 
   * BlueToolFixup - this fixes firmware errors related to Apple Broadcom WiFi and Bluetooth cards that may occur with unsupported Wi-Fi and Bluetooth cards. kext improves AirDrop, Handoff and other features.
 
@@ -75,7 +75,7 @@ Howto(s):
   * Intel VMX Virtualization Technology: Enabled
   * Hyper-Threading: Enabled
   * VT-d: Enabled
-  * Primary Display: CPU Graphics
+  * Primary Display: Auto
   * iGPU: Enabled
   * DVMT Pre-Allocated: 1024
   * SATA Mode Selection: AHCI
@@ -92,25 +92,12 @@ Howto(s):
 
 ## Good and Bad
 
-  :thumbsup: Audio works - tested, works
-
-  :thumbsdown: WIFI & Bluetooth with Handsoff - I removed the unstable wifi and bluetooth kexts
+  :thumbsup: Audio: OK
+  :thumbsup: WIFI: OK
+  :thumbsup: BT: OK
+  :thumbsup: Handoff: Not tested
+  :thumbsup: Airdrop: NOK
 
 ## WARNING!
 
 Do not forget to edit the PlatformInfo section of config.plist!
-
-## Screenshots
-
-## Known issues
-
-  * The wifi loads and connects lately and causes random restarts: 
-  [bug](https://github.com/OpenIntelWireless/itlwm/issues/823)
-  ([log](https://github.com/peterzsilak/hackintosh-on-asus-tuf-b560m-plus-wifi/blob/master/logs/IOPCIFamily_kernel_panic.txt))
-
-## Project plans
-
-  * I will soon expand the system with AMD VGA, the iGPU is only a temporary solution.
-
-  * If I cannot stabilize the Intel (AX201) wifi and bluetooth, I will replace it with the Fenvi T919.
-
