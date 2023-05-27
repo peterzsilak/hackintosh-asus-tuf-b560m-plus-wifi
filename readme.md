@@ -1,4 +1,8 @@
-# Hackintosh Ventura (Rocket Lake) on Asus Tuf Gaming B560M-Plus Wifi
+# Hackintosh - Asus Tuf Gaming B560M-Plus Wifi
+
+# Current macOS 
+macOS Big Sur 
+Version 11.7.7
 
 ## Hardware components:
 
@@ -93,7 +97,7 @@ Howto(s):
 ## Good and Bad
 
   :thumbsup: Audio: OK
-  :thumbsup: WIFI: OK
+  :thumbsup: WIFI: OK (stable with the original Intel wifi)
   :thumbsup: BT: OK
   :thumbsup: Handoff: Not tested
   :thumbsup: Airdrop: NOK
@@ -101,3 +105,8 @@ Howto(s):
 ## WARNING!
 
 Do not forget to edit the PlatformInfo section of config.plist!
+
+## Screenshots
+
+![Screenshot1](screenshots/screenshot1.png)
+![Screenshot2](screenshots/screenshot2.png)
